@@ -137,6 +137,8 @@
 
 <script setup lang="ts">
 import { Bars3Icon, ChevronDownIcon, LinkIcon, PaperAirplaneIcon } from '@heroicons/vue/20/solid'
+import { useNavigation } from '../composables/useNavigation'
+import { useBrands } from '../composables/useBrands'
 
 const { data: navigation } = useNavigation()
 const { data: brands } = useBrands()
