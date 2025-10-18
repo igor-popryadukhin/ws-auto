@@ -7,6 +7,16 @@ export default defineNuxtConfig({
     ['@nuxtjs/tailwindcss', { cssPath: 'assets/css/tailwind.css', exposeConfig: true }],
   ],
   css: ['assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  components: {
+    global: true,
+    dirs: [{ path: '~/components', pathPrefix: false }],
+  },
   typescript: {
     typeCheck: true,
     strict: true,
